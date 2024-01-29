@@ -61,7 +61,7 @@ class Tabuleiro {
 
       if (!_campos[i].minado) {
         sorteadas++;
-        _campos[i].minado;
+        _campos[i].minar();
       }
     }
   }

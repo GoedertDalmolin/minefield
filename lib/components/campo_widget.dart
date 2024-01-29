@@ -31,8 +31,8 @@ class CampoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
-      onLongPress: () {},
+      onTap: () => onAbrir(campo),
+      onLongPress: () => onAlternarMarcacao(campo),
       child: _getImage(),
     );
   }
