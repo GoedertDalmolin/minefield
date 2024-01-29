@@ -14,12 +14,12 @@ class CampoMinadoApp extends StatefulWidget {
 
 class _CampoMinadoAppState extends State<CampoMinadoApp> {
   bool? _venceu;
-  var tabuleiro = Tabuleiro(linhas: 12, colunas: 12, qtdeBombas: 3);
+  Tabuleiro? tabuleiro;
 
   _reiniciar() {
     setState(() {
       _venceu = null;
-      tabuleiro.reiniciar();
+      tabuleiro!.reiniciar();
     });
   }
 
@@ -29,7 +29,7 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
       if (_venceu != null) return;
 
       campo.alternarMarcacao();
-      if (tabuleiro.resolvido) {
+      if (tabuleiro!.resolvido) {
         _venceu = true;
       }
     });
@@ -42,14 +42,26 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
 
       try {
         campo.abrir();
-        if (tabuleiro.resolvido) {
+        if (tabuleiro!.resolvido) {
           _venceu = true;
         }
       } on ExplosaoException {
         _venceu = false;
-        tabuleiro.revelarBombas();
+        tabuleiro!.revelarBombas();
       }
     });
+  }
+
+  Tabuleiro _getTabuleiro(double largura, double altura) {
+    if (tabuleiro == null) {
+      int qtdeColunas = 10;
+      double tamanhoCampo = largura / qtdeColunas;
+      int qtdeLinhas = (altura / tamanhoCampo).floor();
+
+      tabuleiro = Tabuleiro(linhas: qtdeLinhas, colunas: qtdeColunas, qtdeBombas: 20);
+    }
+
+    return tabuleiro!;
   }
 
   @override
@@ -60,11 +72,16 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
           venceu: _venceu,
           onReiniciar: _reiniciar,
         ),
-        body: Container(
-          child: TabuleiroWidget(
-            tabuleiro: tabuleiro,
-            onAbrir: _abrir,
-            onAlternarMarcacao: _alternarMarcacao,
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: LayoutBuilder(
+            builder: (ctx, contraints) {
+              return TabuleiroWidget(
+                tabuleiro: _getTabuleiro(contraints.maxWidth, contraints.maxHeight),
+                onAbrir: _abrir,
+                onAlternarMarcacao: _alternarMarcacao,
+              );
+            },
           ),
         ),
       ),
