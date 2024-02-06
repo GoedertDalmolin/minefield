@@ -32,6 +32,22 @@ Este app tem as seguintes funcionalidades dentro do game:
 ---
 ## 👁️ Pré-visualização
 
+<h1 align="center">
+<img src='.github/1.gif' width="35%">
+<img src='.github/2.gif' width="35%">
+</h1>
+
+<h1 align="center">
+<img src='.github/start-game.png' width="35%">
+<img src='.github/open-mine.png' width="35%">
+</h1>
+
+<h1 align="center">
+<img src='.github/set-flag.png' width="35%">
+<img src='.github/end-game.png' width="35%">
+</h1>
+
+
 ---
 ## 🧪 Tecnologias
 Este projeto foi desenvolvido usando as seguintes tecnologias:
