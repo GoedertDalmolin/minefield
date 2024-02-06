@@ -33,8 +33,8 @@ Este app tem as seguintes funcionalidades dentro do game:
 ## 👁️ Pré-visualização
 
 <h1 align="center">
-<img src='.github/1.gif' width="35%">
 <img src='.github/2.gif' width="35%">
+<img src='.github/1.gif' width="35%">
 </h1>
 
 <h1 align="center">
