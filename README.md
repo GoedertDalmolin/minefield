@@ -38,13 +38,9 @@ Este app tem as seguintes funcionalidades dentro do game:
 </h1>
 
 <h1 align="center">
-<img src='.github/start-game.png' width="35%">
-<img src='.github/open-mine.png' width="35%">
-</h1>
-
-<h1 align="center">
-<img src='.github/set-flag.png' width="35%">
-<img src='.github/end-game.png' width="35%">
+<img src='.github/open-mine.png' width="30%">
+<img src='.github/win-game.png' width="30%">
+<img src='.github/end-game.png' width="30%">
 </h1>
 
 
