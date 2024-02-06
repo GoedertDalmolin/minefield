@@ -14,23 +14,23 @@
 </div>
 
 ---
-## ℹ️ Sobre este repositório
-Game mobile no estilo campo minado do windows 7.
+## ℹ️ About this repository
+Minesweeper-style mobile game for Windows 7.
 
-O objetivo principal deste repositório é demonstrar o aplicativo desenvolvido para treinar meus conhecimentos durante o curso de Flutter da empresa [COD3R](https://www.udemy.com/course/curso-flutter/).
-
----
-## ⚙️ Funcionalidades
-Este app tem as seguintes funcionalidades dentro do game:
-
-- Marcar campos com bandeiras caso tenha possíveis bombas (ao apertar e segurar um determinado campo).
-- Abrir um determinado campo (com um toque simples).
-- Verificar quantas bombas possuí ao redor de um campo aberto.
-- Abrir varios campos vizinhos que não contém bombas.
-- Exibir se o jogador ganhou ou perdeu o jogo com o emoji exibido no top-center da tela. 
+This repository's main objective is to demonstrate the application developed to train my knowledge during the Flutter course from the company [COD3R](https://www.udemy.com/course/curso-flutter/).
 
 ---
-## 👁️ Pré-visualização
+## ⚙️ Features
+This app has the following in-game features:
+
+- Mark fields with flags if there are possible bombs (by pressing and holding a certain field).
+- Open a specific field (with a single tap).
+- Check how many bombs you have in an open field.
+- Open several neighboring fields that do not contain bombs.
+- Display whether the player won or lost the game with the emoji displayed in the top-center of the screen.
+
+---
+## 👁️ Preview
 
 <h1 align="center">
 <img src='.github/2.gif' width="35%">
@@ -45,24 +45,24 @@ Este app tem as seguintes funcionalidades dentro do game:
 
 
 ---
-## 🧪 Tecnologias
-Este projeto foi desenvolvido usando as seguintes tecnologias:
+## 🧪 Technologies
+This project was developed using the following technologies:
 
 - [Flutter 3.16.9](https://docs.flutter.dev/)
 - [Dart 3.2.6](https://dart.dev/)
 
 ---
-## ⚡ Instalação
+## ⚡ Installing
 
-Primeiramente clone este projeto usando:
+Clone this project using:
 
 ```bash
   git clone https://github.com/GoedertDalmolin/minefield.git
   cd minefield
 ```
 
-Por fim compile e execute o projeto.
+Finally compile and run the project.
 
 ---
-</> Desenvolvido por [GoedertDalmolin](https://github.com/GoedertDalmolin) 👋
+</> Developed by [GoedertDalmolin](https://github.com/GoedertDalmolin) 👋
 ---
